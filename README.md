@@ -11,8 +11,11 @@
 - `README.md`
 
 ## Dataset Information
+The dataset used in this project is the **Cardiovascular Disease Dataset** available on Kaggle.  
+You can download it from  https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset
 
-- **Source**: Kaggle "Cardio Training" dataset (medical examination data).  
+- **Source**: Kaggle "Cardio Training" dataset (medical examination data).
+-  
 - **Features**:
   - `age` (in days)
   - `height` (cm)
@@ -28,7 +31,12 @@
   - `cardio` (target: 0 = healthy, 1 = cardiovascular disease)
   - `id` (record identifier)
 
+## Installation
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abujarmohammed/cardiovascular-disease-prediction.git
+   cd cardiovascular-disease-prediction
 ## What’s Inside the Notebook
 
 1. **Exploratory Data Analysis (EDA)**  
@@ -57,13 +65,32 @@
    - **Random Forest**: Accuracy ≈ 0.7340, Sensitivity ≈ 0.6905  
    - **KNN**: Accuracy ≈ 0.73, Sensitivity ≈ 0.70  
    - **SVM** (RBF): Accuracy ≈ 0.7352, Sensitivity ≈ 0.6769
+  
+## Installation
 
- ## How to Use This Repository
-
-1. **Clone or download** the repository.
-2. Ensure you have the necessary Python environment with key packages:
+1. Clone the repository:
    ```bash
-   pip install numpy pandas scikit-learn matplotlib seaborn jupyter
+   git clone https://github.com/abujarmohammed/cardiovascular-disease-prediction.git
+   cd cardiovascular-disease-prediction
+
+Create a virtual environment:
+ python -m venv venv
+
+Activate the virtual environment:
+
+ On Windows:
+  .\venv\Scripts\activate
+ On macOS/Linux:
+  source venv/bin/activate
+
+ Install dependencies:
+   pip install -r requirements.txt
+
+ Download the dataset from this link https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset 
+ and place cardio_train.csv in the root directory.
+
+ Run the Jupyter notebook:
+  jupyter notebook Final_project.ipynb
 
 Note About Project Structure
 
